@@ -1,0 +1,14 @@
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+    <deployment>
+        <exclusions>
+            <module name="org.jboss.resteasy.resteasy-jaxrs" />
+            <module name="org.jboss.resteasy.resteasy-multipart-provider" />
+        </exclusions>
+        <dependencies>
+            <module name="org.glassfish.jersey.core.jersey-server" export="true" />
+            <module name="org.glassfish.jersey.media.jersey-media-multipart" export="true" />
+            <module name="jakarta.activation.api" export="true" />
+            <module name="jakarta.mail.api" export="true" />
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>
